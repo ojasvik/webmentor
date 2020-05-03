@@ -1,0 +1,69 @@
+/* CSS Document */
+
+body {
+	font-size:22px;
+	line-height: 32px;
+	color: #ffffff;
+}
+
+a {
+	color: #FFF;
+}
+
+nav {
+    margin:0;
+	background-color:rgb(71, 69, 69);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+}
+	
+nav ul li {
+	display:inline-block;
+	background-color: rgb(71, 69, 69);
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: grey; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
